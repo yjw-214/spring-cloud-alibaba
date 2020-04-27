@@ -26,6 +26,7 @@ public class PaymentController {
     @PostMapping(value = "/payment/create")
     public CommonResult create(Payment payment){
 
+
        int result = paymentService.create(payment);
        //System.out.println();
        log.info("******插入结果"+result);
@@ -33,6 +34,7 @@ public class PaymentController {
        if(result>0){
            return  new CommonResult(200,"插入数据库成功",result);
        }else{
+
            return new CommonResult(444,"插入失败",null);
        }
    }
