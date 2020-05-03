@@ -43,8 +43,6 @@ public class PaymentController {
     public CommonResult getPaymentById(@PathVariable("id") int id){
 
         Payment payment = paymentService.getPaymentById(id);
-        //System.out.println();
-        log.info("******插入结果"+payment);
 
         if(payment!=null){
             return  new CommonResult(200,"查询成功",payment);
