@@ -6,9 +6,7 @@ import com.atguigu.springcloud.pojo.Payment;
 import com.atguigu.springcloud.service.PaymentService;
 
 
-import jdk.internal.instrumentation.Logger;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -23,6 +21,7 @@ public class PaymentController {
 
     @Resource
     private PaymentService paymentService;
+
     @PostMapping(value = "/payment/create")
     public CommonResult create(Payment payment){
 
