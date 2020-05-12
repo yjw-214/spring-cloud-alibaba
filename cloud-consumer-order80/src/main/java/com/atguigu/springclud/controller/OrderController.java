@@ -1,8 +1,8 @@
 package com.atguigu.springclud.controller;
 
 
-import com.atguigu.springclud.pojo.CommonResult;
-import com.atguigu.springclud.pojo.Payment;
+import com.atguigu.springcloud.pojo.CommonResult;
+import com.atguigu.springcloud.pojo.Payment;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
