@@ -1,4 +1,4 @@
-package com.atguigu.springclud.pojo;
+package com.atguigu.springcloud.pojo;
 
 
 import lombok.AllArgsConstructor;
