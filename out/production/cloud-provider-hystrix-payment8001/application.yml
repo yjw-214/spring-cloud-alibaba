@@ -1,0 +1,26 @@
+server:
+  port: 8001
+
+spring:
+  application:
+    name: cloud-provider-hystrix-payment
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    drvier-class-name: org.gjt.mm.mysql.Driver
+    url: jdbc:mysql://localhost:3306/db2019?useUnicode=true&characterEncodin=utf-8&useSSL=false&serverTimezone=GMT%2B8
+    username: root
+    password: 1234
+
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/
+
+ribbon:
+  ###指的是建立连接后从服务器读取到可用资源所用的时间。
+  ConnectTimeout: 5000
+  ###指的是建立连接所用的时间，适用于网络状况正常的情况下，两端连接所用的时间。
+  ReadTimeout: 5000
