@@ -136,7 +136,7 @@
                     <compilerArguments>
                         <verbose />
                         <!-- 要注意 win是冒号，linux是分号，-->
-                       <!-- <bootclasspath>${java.home}/lib/rt.jar:${java.home}/lib/jce.jar</bootclasspath>-->
+
                     </compilerArguments>
                 </configuration>
             </plugin>
